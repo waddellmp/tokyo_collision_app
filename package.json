@@ -1,0 +1,22 @@
+{
+  "name": "tokyo_collision_app",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waddellmp/tokyo_collision_app.git"
+  },
+  "author": "Matthew Waddell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waddellmp/tokyo_collision_app/issues"
+  },
+  "homepage": "https://github.com/waddellmp/tokyo_collision_app",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
