@@ -1,5 +1,9 @@
-var gulp = require('gulp');
+var gulp = require('gulp'),
+livereload = require('gulp-livereload');
+livereload({ start: true })
 
-gulp.task('default', function() {
-  // place code for your default task here
+gulp.task('html', function(){
+  return gulp.src(['./index.html'])
+  .pipe(livereload());
 });
+

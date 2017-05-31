@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/waddellmp/tokyo_collision_app",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1"
   }
 }
