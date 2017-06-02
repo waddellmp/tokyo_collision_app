@@ -3,8 +3,7 @@
 
 # nodejs
 node_modules
-.giterroe
-
+npm-debug.log
 # build artifacts
 bundle.js.map
 npm-debug.log
