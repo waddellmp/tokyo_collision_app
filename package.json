@@ -1,33 +1,22 @@
 {
   "name": "tokyo_collision_app",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Matt Waddell",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nigelgilbert/tokyo_collision_app.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nigelgilbert/tokyo_collision_app/issues"
-  },
-  "homepage": "https://github.com/nigelgilbert/tokyo_collision_app#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-clean-css": "3.3.1",
     "gulp-concat": "2.6.1",
     "gulp-livereload": "3.8.1",
+    "gulp-nodemon": "^2.2.1",
     "gulp-size": "2.1.0",
     "gulp-sourcemaps": "2.6.0",
     "gulp-strip-debug": "1.1.0",
     "gulp-uglify": "2.1.2",
-    "gulp4": "^4.0.1",
     "livereload-js": "2.2.2"
-  },
-  "dependencies": {
-    "express": "^4.15.3"
   }
 }
