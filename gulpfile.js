@@ -49,7 +49,7 @@ gulp.task('reload-js', function () {
     return gulp.src(resources.js.concat(resources.dev))
         .pipe(sourceMaps.init())
         .pipe(concat('bundle.js'))
-        .pipe(sourceMaps.write())
+        .pipe(sourceMaps.write(''))
         .pipe(gulp.dest('dist'))
         .pipe(livereload());
 });
