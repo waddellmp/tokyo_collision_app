@@ -25,6 +25,7 @@ var resources = {
     ]
 };
 
+// Must copy HTML to /dist for our Express server.
 gulp.task('copy-html', function () {
     return gulp.src(resources.html)
         .pipe(gulp.dest('dist'));

@@ -8,15 +8,16 @@ var path = require('path');
 var app = express();
 
 // Serve static content.
+// https://expressjs.com/en/starter/static-files.html
 var static_path = path.join(__dirname, 'dist/');
 app.use(express.static(static_path));
 
 // Configure bodyparser.
-// This allows us to get the json from a POST.
+// This is simply an express plugin that allows us to get the JSON out of a POST.
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Configure API.
+// Configure API
 app.use('/api', routes);
 
 // Turn it on.
