@@ -1,11 +1,10 @@
-# OSX
-.DS_Store
+# webstorm
+.idea
 
-# nodejs
+# node
 node_modules
 npm-debug.log
-# build artifacts
-bundle.js.map
-npm-debug.log
-.idea
+
+# build
 dist
+!dist/images
