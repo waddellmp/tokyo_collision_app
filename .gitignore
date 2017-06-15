@@ -4,14 +4,8 @@
 # node
 node_modules
 npm-debug.log
-<<<<<<< HEAD
 
 # build
 dist
 !dist/images
-=======
-# build artifacts
-bundle.js.map
-npm-debug.log
-dist
->>>>>>> dev-ops-changes
+
