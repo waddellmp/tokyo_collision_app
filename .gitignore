@@ -7,3 +7,4 @@ npm-debug.log
 # build artifacts
 bundle.js.map
 npm-debug.log
+dist
