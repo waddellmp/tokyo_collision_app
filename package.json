@@ -1,53 +1,21 @@
 {
   "name": "tokyo_collision_app",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "",
   "main": "server.js",
-=======
-  "description": "website",
-  "main": "index.js",
->>>>>>> ef6a109802a00cfe7c1ea9208809acd21b69ec09
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Matt Waddell",
+  "homepage": "https://github.com/waddellmp/tokyo_collision_app",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
   },
-  "repository": {
-    "type": "git",
-<<<<<<< HEAD
-    "url": "git+https://github.com/nigelgilbert/tokyo_collision_app.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nigelgilbert/tokyo_collision_app/issues"
-  },
-  "homepage": "https://github.com/nigelgilbert/tokyo_collision_app#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-clean-css": "3.3.1",
     "gulp-concat": "2.6.1",
     "gulp-livereload": "3.8.1",
-    "gulp-size": "2.1.0",
+    "gulp-nodemon": "^2.2.1",
     "gulp-sourcemaps": "2.6.0",
-    "gulp-strip-debug": "1.1.0",
     "gulp-uglify": "2.1.2",
-    "gulp4": "^4.0.1",
     "livereload-js": "2.2.2"
-  },
-  "dependencies": {
-    "express": "^4.15.3"
-=======
-    "url": "https://github.com/waddellmp/tokyo_collision_app.git"
-  },
-  "author": "Matthew Waddell",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/waddellmp/tokyo_collision_app/issues"
-  },
-  "homepage": "https://github.com/waddellmp/tokyo_collision_app",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-connect": "^5.0.0",
-    "gulp-livereload": "^3.8.1"
->>>>>>> ef6a109802a00cfe7c1ea9208809acd21b69ec09
   }
 }
