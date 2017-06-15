@@ -28,14 +28,16 @@ var resources = {
 // Must copy HTML to /dist for our Express server.
 gulp.task('copy-html', function () {
     return gulp.src(resources.html)
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist'))
+        .pipe(livereload());
 });
 
 gulp.task('bundle-css', function () {
     return gulp.src(resources.css)
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(concat('bundle.css'))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist'))
+        .pipe(livereload());
 });
 
 gulp.task('bundle-js', function () {
@@ -45,7 +47,7 @@ gulp.task('bundle-js', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('reload-js', function () {
+gulp.task('development-js', function () {
     return gulp.src(resources.js.concat(resources.dev))
         .pipe(sourceMaps.init())
         .pipe(concat('bundle.js'))
@@ -61,11 +63,11 @@ gulp.task('reload-server', function () {
     });
 });
 
-gulp.task('dev', ['copy-html', 'bundle-css', 'reload-js', 'reload-server'], function () {
+gulp.task('dev', ['copy-html', 'bundle-css', 'development-js', 'reload-server'], function () {
     livereload.listen();
     gulp.watch(resources.html, ['copy-html']);
     gulp.watch(resources.css, ['bundle-css']);
-    gulp.watch(resources.js, ['reload-js']);
+    gulp.watch(resources.js, ['development-js']);
 });
 
 gulp.task('bundle', ['bundle-css', 'bundle-js']);
