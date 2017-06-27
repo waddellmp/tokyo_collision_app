@@ -9,7 +9,9 @@ html, body {
     font-family: "Century Gothic";
     font-weight: 200;   
 }
-
+p {
+    font-size: 100%;;
+}
 .global-color{
     color: white;
 }
@@ -80,7 +82,7 @@ styling for images in carousel
 */
 
 .carousel-wrapper {
-    background-color: #404040	;
+    background-color: #470202;
     height: auto;
     width: auto;
     overflow: none;
@@ -105,72 +107,86 @@ styling for images in carousel
     margin: 0 auto;
 }
 }
-
+.subject-panel {width: 100%;height: auto;background-color:#d8d6d6;display: flex;flex-grow: 1;}
+.title-wrapper {color: white;min-width:200px;width: 200px;text-align: left;padding: 50px 20px;background-color: #353130;font-size: 1.8rem;border:1px solid white;text-align: center;border-left:none;}
+.block-p {margin: 0 1%;}
+.block-txt-wrapper{background-color: #d8d6d6;width: 100%;padding: 3% 0;}
 /*flex box*/
 .flex-container{
     margin: 0;
     width: 100%;
     height: auto;
-    background-color: rgb(26, 26, 26);
+    background-color: white;
     display: -webkit-flex;
     display: flex;
     flex-flow: row;
-    padding-top: 2%;
 }
 /*Services container*/
 #flex-item-services{
-    width:inherit;
+    width:100%;
     height: auto;
-    border: 1px solid whitesmoke;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     }
 
 .flex-block {
-    width: 220px;
+    width: auto;
     height:100px;
-    border: 1px solid whitesmoke;
+    flex-grow: 1;
     }
-.flex-block-lg {
-    width: 100%;
-    height: 100%;
-    border: 1px solid whitesmoke;
-}
+
 .block-txt {
     text-align: center;
+    padding: 20px;
+    border-left: 1px solid white;
 }
 
+.subject-block {
+    background-color: #353130;
+    min-width: 200px;
+    max-width: 200px;
+    border: none;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px;
+}
+.block-item {
+    background-color: #444652;
+}
 /*styling for service icons*/
 
 
 
 /*form-container*/
 .flex-item-form_container{
-    width: 30%;
+    margin: 0;
+    width:100%;
     height: auto;
-    background-color:#595959; 
-    padding:1% ; 
+    background-color:#353130;
     color: #efedef;
+    overflow: auto;
 }
 
 #contact-form {
-    background-color:rgb(26, 26, 26);
-    padding: 3%;
-    width: 100%;
-    display: visible;
-    border: 1px solid white;
-}
-
-.first-last-email{
-    float: left;
-}
-.comment-bx{
+    background-color: #353130;
+    width: 20%;
+    height:500px;;
+    padding:2% 2%;
     float: right;
+    margin-top:0;
 }
+#location-wrapper{margin:0 auto;width:80%;height: auto;background-color: #444652;float: left;}
 
+.location-header{font-size:1.8rem;padding: 40px 20px;text-align:center;height: auto;width:200px;margin: 0 auto;}
+.location-card{color: black;text-align: left;display: inline-block;border-radius: 8px;width: 20%;min-width:106px; min-height: 100px;padding: 2%; background-color:#d8d6d6;margin:2% 3%;}
+
+.contact-header{text-align: center;}
 .special-input[type="text"] {
     padding: 10px;
+    width: 185px;
+    height: 30px;
+    border-radius:8px;
     border: solid 1px #dcdcdc;
     transition: box-shadow 0.3s, border 0.3s;
 }
@@ -178,14 +194,23 @@ styling for images in carousel
 .special-input[type="text"].focus {
     border: solid 1px white;
 }
+/****************************Footer***************************/
+#footer {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    color: white;
+}
 
  /*query for expanding flex box to 100%*/
     @media (max-width: 632px){
         .flex-container {display: block; width: 100%;}
-        .flex-item-form_container {width: 100%;}
-        .flex-item-lg {width:100%;}
-        .flex-item-sm {width: 20%;}
-        #flex-item-services {width: 100%;}
-        
-        
+        #contact-form {width:100%;height: auto;}
+        #flex-item-services {padding: 0;width: 100%;flex-wrap:wrap;}
+        .flex-block{width: 50%;height: 70px;}
+        .subject-block{width: 100%;max-width:none;}
+        .subject-panel {display:block;}
+        .title-wrapper{width:100%;padding:10px;}
+        .location-header{width:100%;}
+        #location-wrapper{width:100%;}
     }
