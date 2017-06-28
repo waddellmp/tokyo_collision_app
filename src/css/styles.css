@@ -162,24 +162,23 @@ styling for images in carousel
 .flex-item-form_container{
     margin: 0;
     width:100%;
-    height: auto;
+    height: 600px;
     background-color:#353130;
     color: #efedef;
-    overflow: auto;
+    display:flex;
 }
 
 #contact-form {
-    background-color: #353130;
-    width: 20%;
-    height:500px;;
+    background-color: black;
+    width:20%;
+    min-width: 300px;
+    height:100%;
     padding:2% 2%;
-    float: right;
-    margin-top:0;
 }
-#location-wrapper{margin:0 auto;width:80%;height: auto;background-color: #444652;float: left;}
+#location-wrapper{width: 20%;min-width:300px;height: 100%;background-color: #444652;}
 
-.location-header{font-size:1.8rem;padding: 40px 20px;text-align:center;height: auto;width:200px;margin: 0 auto;}
-.location-card{color: black;text-align: left;display: inline-block;border-radius: 8px;width: 20%;min-width:106px; min-height: 100px;padding: 2%; background-color:#d8d6d6;margin:2% 3%;}
+.location-header{font-size:1.8rem;padding: 40px 20px;text-align:center;height: auto;width:auto;}
+.location-card{color: black;text-align: left;width: 100%;min-height: 100px;padding: 1%; background-color:#d8d6d6;border-top: 1px solid black;padding-left: 25px;}
 
 .contact-header{text-align: center;}
 .special-input[type="text"] {
@@ -197,13 +196,15 @@ styling for images in carousel
 /****************************Footer***************************/
 #footer {
     width: 100%;
-    height: 150px;
+    height: auto;
     background-color: black;
     color: white;
 }
-
+.central_footer_txt{text-align:center;}
+.footer_bb{width: 100%;background-color: black;}
+.bb-photo{margin-left:75%;}
  /*query for expanding flex box to 100%*/
-    @media (max-width: 632px){
+    @media (max-width: 822px){
         .flex-container {display: block; width: 100%;}
         #contact-form {width:100%;height: auto;}
         #flex-item-services {padding: 0;width: 100%;flex-wrap:wrap;}
@@ -212,5 +213,7 @@ styling for images in carousel
         .subject-panel {display:block;}
         .title-wrapper{width:100%;padding:10px;}
         .location-header{width:100%;}
-        #location-wrapper{width:100%;}
+        #location-wrapper{width:100%;height: auto;display:block;}
+        .flex-item-form_container{height:1000px;}
+        .bb-photo{max-width: 100px;}
     }
