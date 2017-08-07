@@ -6,6 +6,7 @@
 var express = require('express');
 var router = express.Router();
 
+
 // GET
 router.route('/hello')
     .get(function(req, res) {

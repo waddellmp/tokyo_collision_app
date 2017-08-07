@@ -6,11 +6,12 @@
   "homepage": "https://github.com/waddellmp/tokyo_collision_app",
   "dependencies": {
     "body-parser": "^1.17.2",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "nodemailer": "^4.0.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "3.3.1",
+    "gulp-clean-css": "^3.7.0",
     "gulp-concat": "2.6.1",
     "gulp-livereload": "3.8.1",
     "gulp-nodemon": "^2.2.1",
