@@ -2,7 +2,9 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-  background-color:#191a1c!important;
+  font-size: 1rem;
+      font-family:"Century Gothic";
+
 }
 body > .inner {
   display: none;
@@ -90,6 +92,7 @@ body.pg-loaded > .inner {
     text-decoration: none;
   height: 30px;
   border-radius:5px;  
+  cursor:pointer;
 }
 
 .fa-facebook {
@@ -112,19 +115,15 @@ body.pg-loaded > .inner {
 }
 
 /****Navbar Customization****/
-.navbar-custom{background-color: #1f1f21;}
+.navbar-custom{background-color: #101010;}
 /*sets color for all nav-items*/
 .navbar-custom a.navbar-brand,
-.navbar-custom > .collapse > .navbar-nav > .nav-item > a{font-size: 1.2rem;font-weight:400;color:gray;}
-.navbar-custom > .collapse > .navbar-nav > .nav-item > a:hover{opacity: .4;}
-
-
-
+.navbar-custom > .collapse > .navbar-nav > .nav-item > a{font-size: 1.2rem;font-weight:400;color:#ef402d;}
+.navbar-custom > .collapse > .navbar-nav > .nav-item >a:hover{color:white;}
 .navbar-nav > li{
     padding-left: 10px;
     padding-right: 20px;
 }
-
 .navbar-brand img.logo {
     width: 25px;
     height: 25px;
@@ -165,51 +164,113 @@ styling for images in carousel
     max-height: 240px;
     margin: 0 auto;
 }
+#bs-card-wrap{
+    width:100%;
+    padding: 5% 0;
 
+    background-size:cover;
+    background-image: url("http://res.cloudinary.com/dol4hfiux/image/upload/v1503002402/zebra_fqilgh.jpg");
+}
+#bs-card-frame{
+    width:auto;
+    height:auto;
+    background-color:black;
+}
+.business-card{
+    display:block;
+    width:100%;
+    max-width:735px;
+    margin: 0 auto;
+    height:290px;
+}
 .audi-img {
     float:right;
-    clear:both;
-    margin-right: 5%;
     width:250; 
     height:250px;
 }
-
+#subject-wrapper{
+    width:auto;
+    height:auto;
+}
 .subject-header{
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 50px;
     color:#ef402d;
-    font-family:"Century Gothic";
+    text-align:center;
     
 }
-
-.subject-panel{
+.text-photo-wrapper{
+    width:100%;
+}
+.middle-wrapper{
     width: 100%;
     height: auto;
-    margin-top:5%;
-    
+    background-color:black; 
     
 }
-.subject-wrapper {
-    margin: 2% 0 4% 10%;
-    width:50%;
-    height:auto;
-    
-    display:inline-block;
-}
-.subject-wrapper-middle {
-    margin: 0 10% 2% 10%;
+#hail{
+    background-image: url("http://res.cloudinary.com/dol4hfiux/image/upload/v1502937247/dentocar_krsebu.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-width: 300px;
     width:auto;
-    height:auto;
-    
-    display:inline-block;
+    height: 300px;
+    padding-top: 150px;
+    margin: 0 20%;
 }
 
+.hail-btn{
+    background-color:rgba(0,0,0,.9);
+    border:none;
+    padding:20px;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    color:white;
+    
+
+}   
+
+.subject-wrapper {
+    margin: 0 0;
+    width:100%;
+    height:auto;
+    display:inline-block;
+    padding:20px;
+    background-color:black;    
+
+}
+ @media (max-width: 822px){
+     .subject-wrapper{
+         margin:0;
+         width:auto;
+         width:100%;
+         text-align:center;
+         padding: 30px 0;
+     }
+     
+ }
+
+.subject-wrapper-middle {
+    width:100%;
+    height:auto;
+    display:inline-block;
+}
+.subject-wrapper-services{
+    width:100%;
+    margin-top:2%;
+    padding-bottom:30px;
+    background-color: black;
+}
 .block-p {
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    width:auto;
-    display:block;
-    clear:both;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    width: 100%;
+    text-align:center;
+    padding: 10px 70px;
+
+
     }
 /*flex box*/
 .flex-container{
@@ -223,37 +284,49 @@ styling for images in carousel
 /*Services Box Styling*/
 #service-wrapper{
    width: 400px;
-   margin: 0 0;
-   padding: 20px;
-   
-   
 }
-ul.service-list > li{
-    list-style: none;
-    width:300px;
-    border:1px solid gray;
-    color: white;
-    padding:5px;
-    display: inline-block;
-    border-radius: 3px;
+.service-menu-h{
+    color:#ef402d;
+    text-align:center;
+    padding:20px;
 
 }
-ul.service-list > li:hover{
-    background-color: #ef402d;
-    cursor: pointer;
+#list-menu{
+    width: 100%; 
+    padding:0 30%;
 }
-#jumbo-tron{
-    width: 300px;
-    border: 1px solid gray;
-    
+.list-menu-item{
+        width:auto;
+        height:100%;
+        margin-bottom:10px;
+        border:1px solid gray;
+        background-color:black; 
 }
+#list-menu div > h3{
+    color:white; 
+    cursor:pointer;
+    width:auto; 
+    font-size: 1.5rem;
+    padding:10px;
+}
+.pdr-initial{
+     color:black;
+     background-color:#ef402d!important;
+}
+.serv-p{    
+    background-color:#ef402d; 
+    width:auto;
+    padding:30px;
+    font-size: 1.5rem;
+}
+
 /*form-container*/
 .flex-item-form_container{
-    margin-top:0;
     width:100%;
     height: auto;
-    background-color:#191a1c;
     color: #efedef;
+    height:auto;
+    background-color:black;
 }
 #contact-form{
     width:100%;
@@ -263,6 +336,7 @@ ul.service-list > li:hover{
    background-image: url('http://res.cloudinary.com/dol4hfiux/image/upload/v1501784141/vert-lg.jpg');
    background-repeat: no-repeat;
    background-position: center;
+   background-size:100%;
 }
 #contact-form > form {
     color:white;
@@ -271,9 +345,6 @@ ul.service-list > li:hover{
     width:900px;
     min-width:300px;
     margin: 0 auto;
-    
-   
-    
     box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -310,9 +381,14 @@ fieldset > #left-col{
 
 #location-wrapper{
     width: 100%;height: auto;
-    background-color:#191a1c;
     display:flex;
     flex-direction:row;
+    }
+
+    .learn-more{
+        background-color: greenyellow;
+        border-radius: 8px;
+        padding:10px;
     }
 .card-wrapper{
     display:flex;
@@ -326,10 +402,7 @@ fieldset > #left-col{
     width:auto;
     color:gray;
     margin:1% 35%;
-    border:1px solid gray;
-    border-top:none;
-    border-left:none;
-    border-right:none;
+    
     }
 .location-card{
     color: white;
@@ -366,6 +439,12 @@ button.submit-btn{
 button.submit-btn:active, button.submit-btn:hover{
     opacity:.4;
     }
+input[type=text]{
+    outline:none;
+}
+input[type=text]:focus{
+    border-color:lightcoral;
+}
 
 /*twitter feed styling*/
 #twitter{
@@ -386,14 +465,17 @@ button.submit-btn:active, button.submit-btn:hover{
 
 /*google map styling*/
 .map-wrapper{
-    height:500px;
     width:100%;
+    padding: 3% 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("http://res.cloudinary.com/dol4hfiux/image/upload/v1503002402/zebra_fqilgh.jpg");
    
     }
 #map {
     width:auto;
     height: 500px;
-    margin: 0 25%;
+    margin: 0 3%;
 }
 .service-list > li {
   color:white;
@@ -435,4 +517,15 @@ button.submit-btn:active, button.submit-btn:hover{
         #guarantee{padding:0;margin:0;}
         .card-wrapper{flex-direction:column;}
         .map-wrapper{width:100%;display:block;}
+        #map{width:100%;margin:0;}
+        .pdr-initial{margin-left:none;width:auto}
+        .serv-p{font-size:1.0rem;}
+        #list-menu div > h3{font-size: 1.0rem;}
+        #contact-form{
+            background-size:100%;
+        }
+        .business-card{
+            height:200px;
+        }
+
     }
