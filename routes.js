@@ -10,7 +10,6 @@ var path = require('path');
 var routes = require('./routes');
 var bodyParser = require('body-parser');
 
-
 // GET
 router.route('/hello')
     .get(function (req, res) {

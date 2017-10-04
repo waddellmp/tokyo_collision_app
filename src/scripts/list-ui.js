@@ -1,10 +1,12 @@
 /*
-    this script provides behvaiour for the service list code
+    this script provides behvaiour for the service list menu code
 
 */
 var pdr = document.getElementById('pdr');
 var paint = document.getElementById('paint');
+var insurance = document.getElementById('insurance');
 var pdrChild = document.getElementById('pdr-content');
+var incentives = document.getElementById('incentives');
 function toggleDiv() {
     var parentNode = this;
     var plus = parentNode.childNodes.item(1).childNodes.item(1).childNodes.item(1);
@@ -23,3 +25,5 @@ function toggleDiv() {
 
 pdr.addEventListener("click",toggleDiv);
 paint.addEventListener("click",toggleDiv);
+insurance.addEventListener("click",toggleDiv);
+incentives.addEventListener("click", toggleDiv);
